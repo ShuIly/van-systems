@@ -1,0 +1,46 @@
+.van-navigation {
+  height: 7rem;
+  position: relative;
+}
+
+.van-nav-logo {
+  cursor: pointer;
+}
+
+.van-nav-item {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: var(--font--primary);
+  transition: .3s;
+  cursor: pointer;
+  min-width: 100px;
+  text-align: center;
+}
+
+.van-nav-item > span {
+  position: relative;
+}
+
+.van-nav-item > span::after {
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background: var(--font--primary);
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+.van-nav-item:hover > span::after {
+  opacity: 1;
+  bottom: -0.2rem;
+}
+
+.van-navigation-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

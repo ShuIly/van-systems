@@ -1,0 +1,51 @@
+.van-top-header {
+  height: 20rem;
+  position: relative;
+}
+
+.van-top-header-text {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  color: var(--font--primary);
+  font-size: 10rem;
+  line-height: 5rem;
+}
+
+.van-bottom-header {
+  height: 30rem;
+  position: relative;
+  background: var(--background--primary);
+}
+
+.van-bottom-header-text {
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  color: var(--font--light);
+  font-size: 10rem;
+  line-height: 8rem;
+}
+
+.van-contact-button {
+  text-transform: uppercase;
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--background--light);
+  border: 1px solid var(--background--light);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: var(--font--primary);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.van-header-image {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  bottom: 0;
+}
