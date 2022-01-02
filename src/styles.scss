@@ -11,12 +11,13 @@
 
 
 :root {
-  --background--light: #ffffff;
-  --background--primary: #e3a790;
+  --background-light: #ffffff;
+  --background-primary: #AFC2D5;
   
-  --font--light: #ffffff;
-  --font--primary: #e3a790;
-  --font--secondary: #525252;
+  --font-light: #ffffff;
+  --font-primary: #AFC2D5;
+  --font-secondary: #525252;
+  --font-primary-dark: #9ebfe1;
 }
 
 html, body {
@@ -30,7 +31,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--background--light);
+  background: var(--background-light);
 }
 
 .van-page {
@@ -76,4 +77,8 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.van-uppercase {
+  text-transform: uppercase;
 }
