@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  public width: number = window.innerWidth;
+
+  constructor() {
+  }
+  
+  onResize(event: any) {
+    this.width = event.target.innerWidth;
+  }
 }

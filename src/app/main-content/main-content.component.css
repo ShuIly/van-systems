@@ -112,46 +112,47 @@
 }
 
 .van-service-container {
-  width: 340px;
-  min-height: 500px;
-  background: var(--background-primary);
+  width: 100%;
+  height: 500px;
+  max-width: 650px;
+  background-position: 50% 50%;
+  background-size: cover;
+
   box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
   margin-bottom: 10rem;
   text-align: center;
   position: relative;
   border-radius: 5px;
-  border: 1px solid var(--background-primary);
+}
+
+.van-service-data-container {
+  width: 300px;
 }
 
 .van-service-header {
+  position: relative;
   font-size: 1.7rem;
-  text-align: center;
-  color: var(--font-light);
-}
-
-.van-service-image {
-  text-align: center;
-  min-height: 140px;
+  color: #9b9b9b;
 }
 
 .van-see-more-button {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-
-  background: var(--background-light);
-  border: 1px solid var(--background-light);
+  background: var(--background-primary);
+  border: 1px solid var(--background-primary);
   border-radius: 3px;
   padding: 0.7rem 1rem;
-  color: var(--font-primary);
+  color: var(--font-light);
   font-weight: bold;
   cursor: pointer;
   font-size: .9rem;
 }
 
+.van-service-parent-container {
+  margin-top: 50px;
+}
+
 .van-service-content {
-  color: var(--background-light);
+  position: relative;
+  color: #9b9b9b;
   text-align: left;
   font-size: 1.2rem;
 }
@@ -293,5 +294,25 @@ label,
   font-size: 1.2rem;
 }
 
-.van-contact-icon {
+@media screen and (max-width: 1200px) {
+  .van-header-image {
+    height: 400px;
+    bottom: -50% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .van-service-container {
+    height: 400px;
+  }
+
+  .van-top-header {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    height: 300px;
+  }
 }

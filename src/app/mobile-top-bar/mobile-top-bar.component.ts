@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'van-top-bar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.css']
+  selector: 'mobile-top-bar',
+  templateUrl: './mobile-top-bar.component.html',
+  styleUrls: ['./mobile-top-bar.component.scss']
 })
-export class TopBarComponent {
+export class MobileTopBarComponent {
 
   constructor(private router: Router) {
 

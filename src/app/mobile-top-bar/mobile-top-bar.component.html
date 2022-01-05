@@ -1,0 +1,27 @@
+<nav role="navigation" class="w-100 h-45 t-0 l-0 position-fixed">
+  <div id="top-bar" class="w-100 h-100 position-relative no-select" style="z-index: 2;">
+
+    <input type="checkbox" class="menuInput display-block position-absolute h-100 w-50px pointer hidden" style="z-index: 999;" />
+
+    <div id="lux-icon" class="position-absolute ml-3 mt-3" style="z-index: 3; width: 20px;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="lux-font w-100 position-absolute" style="left: 60px; line-height: 44px; letter-spacing: 1px; z-index: 999;">
+      <span>VAN SYSTEMS</span>
+    </div>
+
+    <div id="top-bar-container" class="position-absolute l-0 t-0 h-100vh" style="width: 280px; z-index: 1;">
+      <ul class="h-100 pb-4" style="overflow: auto;">
+        <li class="py-2 pl-4 lux-close outline-none" [routerLink]="['home']">Начало</li>
+        <li class="py-2 pl-4 lux-close outline-none" [routerLink]="['home']">Портфолио</li>
+        <li class="py-2 pl-4 lux-close outline-none" [routerLink]="['home']">Нашите Услуги</li>
+        <li class="py-2 pl-4 lux-close outline-none" [routerLink]="['home']">Контакти</li>
+      </ul>
+    </div>
+
+    <div id="lux-curtain" class="position-fixed t-0 l-0 h-100vh vw-100 hidden lux-close"></div>
+  </div>
+</nav>

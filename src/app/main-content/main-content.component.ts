@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'van-main-content',
@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-content.component.css']
 })
 export class MainContentComponent {
+
+  @ViewChild('contactsContainer') contactsContainer: ElementRef;
+  
+  constructor() {
+    
+  }
+
+  scrollToContacts() {
+    (this.contactsContainer.nativeElement as HTMLElement).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 }

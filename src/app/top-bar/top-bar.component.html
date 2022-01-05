@@ -11,10 +11,10 @@
   
     <div class="van-navigation-list d-inline-block">
       <ul class="m-0 p-0">
-        <li class="van-nav-item d-inline-block px-3 py-3"><span>Начало</span></li>
+        <li class="van-nav-item d-inline-block px-3 py-3" (click)="goToHome()"><span>Начало</span></li>
         <li class="van-nav-item d-inline-block px-3 py-3"><span>Портфолио</span></li>
-        <li class="van-nav-item d-inline-block px-3 py-3"><span>За Нас</span></li>
-        <li class="van-nav-item d-inline-block px-3 py-3"><span>Контакти</span></li>
+        <li class="van-nav-item d-inline-block px-3 py-3" (click)="scrollTo('services')"><span>Нашите Услуги</span></li>
+        <li class="van-nav-item d-inline-block px-3 py-3" (click)="scrollTo('contacts')"><span>Контакти</span></li>
       </ul>
     </div>
   </nav>

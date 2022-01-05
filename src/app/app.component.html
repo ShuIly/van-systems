@@ -1,14 +1,11 @@
-<!-- <div class="van-page">
-  <div class="van-page-top">
-    <van-top-bar></van-top-bar>
-  </div>
-  
-  <div class="van-page-content overflow-hidden">
-    <div class="h-100 overflow-auto">
-      <van-main-content></van-main-content>
-    </div>
-  </div>
-</div> -->
+<ng-container *ngIf="width <= 1024">
+  <mobile-top-bar class="position-fixed l-0 t-0" style="z-index: 999;"></mobile-top-bar>
+</ng-container>
 
-<van-top-bar></van-top-bar>
-<van-main-content></van-main-content>
+<ng-container *ngIf="width > 1024">
+  <van-top-bar></van-top-bar>
+</ng-container>
+
+<div (window:resize)="onResize($event)">
+  <router-outlet></router-outlet>
+</div>

@@ -12,7 +12,7 @@
       <div class="van-bottom-header-text van-uppercase ml-4">
         <span>Вашия дом</span>
 
-        <button class="van-contact-button">
+        <button class="van-contact-button" (click)="scrollToContacts()">
           Свържете се с нас
         </button>
       </div>
@@ -21,10 +21,6 @@
 </header>
 
 <main>
-  <!-- <div class="van-portfolio-title-container">
-    <div class="van-portfolio-title van-uppercase">Портфолио</div>
-  </div> -->
-
   <div class="row no-gutters mt-2">
     <div class="col-9">
       <div class="row no-gutters ml-2">
@@ -77,64 +73,71 @@
   </div>
 
   <div class="row no-gutters justify-content-center">
+    <div class="col-6 px-4">
+      <div class="van-service-container" style="background-image: url(/assets/images/IMG-9b4b9c40caa1599a7376631194254fb8-V.jpg);">
+      </div>
+    </div>
+    
     <div class="col-auto px-4">
-      <div class="van-service-container">
-        <div class="van-service-header pt-4">
+      <div class="van-service-data-container">
+        <div class="van-service-header py-4">
           Цялостни решения
         </div>
-
-        <div class="van-service-image mt-4">
-          <img width="auto" height="100px" src="/assets/images/whole-renovation.png" alt="Облицовки">
+  
+        <div class="van-service-content">
+          Креативни цялостни решения за различни видове обекти, включително и апартаменти.
+          Пълна гама от стройтелно-ремонтни дейности.
         </div>
-
-        <div class="van-service-content mx-3 p-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo nisi itaque ratione minus,
-          alias delectus non, tenetur omnis at saepe nobis aliquam dolor minima eaque tempore dolore consectetur consequuntur!
-        </div>
-
-        <button class="van-see-more-button">
+  
+        <button class="van-see-more-button mt-4">
           Виж повече
         </button>
       </div>
     </div>
+  </div>
 
+  <div class="row no-gutters justify-content-center van-service-parent-container">
     <div class="col-auto px-4">
-      <div class="van-service-container">
-        <div class="van-service-header pt-4">
+      <div class="van-service-data-container">
+        <div class="van-service-header py-4">
           Окачени тавани
         </div>
-
-        <div class="van-service-image mt-4">
-          <img width="auto" height="130px" src="/assets/images/ceiling-lamp.png" alt="Облицовки">
+  
+        <div class="van-service-content">
+          Декоративните окачени тавани от гипсокартон са особено популярни и имат силно естетическо въздействие, а възможностите
+          за дизайн са практически неограничени. Това прави окачените тавани приложими, за всеки един стил в интериора: от класически до модерен.
         </div>
-
-        <div class="van-service-content mx-3 p-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo nisi itaque ratione minus,
-          alias delectus non, tenetur omnis at saepe nobis aliquam dolor minima eaque tempore dolore consectetur consequuntur!
-        </div>
-
-        <button class="van-see-more-button">
+  
+        <button class="van-see-more-button mt-4">
           Виж повече
         </button>
       </div>
     </div>
 
+    <div class="col-6 px-4">
+      <div class="van-service-container" style="background-image: url(/assets/images/pexels-felipe-hueb-2747901.jpg);">
+      </div>
+    </div>
+  </div>
+
+  <div class="row no-gutters justify-content-center van-service-parent-container">
+    <div class="col-6 px-4">
+      <div class="van-service-container" style="background-image: url(/assets/images/pexels-victoria-borodinova-3315291.jpg);">
+      </div>
+    </div>
+
     <div class="col-auto px-4">
-      <div class="van-service-container">
-        <div class="van-service-header pt-4">
+      <div class="van-service-data-container">
+        <div class="van-service-header py-4">
           Облицовки
         </div>
-
-        <div class="van-service-image mt-4">
-          <img width="auto" height="110px" src="/assets/images/wall-painting.png" alt="Облицовки">
+  
+        <div class="van-service-content">
+          Богат избор на подови настилки и стенни облицовки – ламинат от естествено дърво в най-различни нюанси, както и теракот,
+          керамика и фаянс. Стенни декоративни облицовки и мазилки.
         </div>
-
-        <div class="van-service-content mx-3 p-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo nisi itaque ratione minus,
-          alias delectus non, tenetur omnis at saepe nobis aliquam dolor minima eaque tempore dolore consectetur consequuntur!
-        </div>
-        
-        <button class="van-see-more-button">
+  
+        <button class="van-see-more-button mt-4">
           Виж повече
         </button>
       </div>
@@ -143,7 +146,7 @@
 
   <div class="row no-gutters">
     <div class="col-6">
-      <div class="van-contact-container">
+      <div class="van-contact-container" #contactsContainer>
         <div class="van-contact-title van-uppercase">
           Контакти
         </div>
