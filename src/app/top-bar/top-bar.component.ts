@@ -19,8 +19,8 @@ export class TopBarComponent {
         el = document.querySelector('.van-contact-container');
         break;
       case 'services':
-        el = document.querySelectorAll('.van-services-bottom-title')[0] as HTMLElement;
-        return;
+        el = document.querySelectorAll('.van-services-title-top-container')[0] as HTMLElement;
+        break;
       default:
         break;
     }

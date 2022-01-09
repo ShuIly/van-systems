@@ -1,7 +1,7 @@
 <header>
   <div class="van-top-header">
     <div class="van-wrapper">
-      <div class="van-top-header-text van-uppercase ml-4">
+      <div class="van-top-header-text van-uppercase">
         Решения за
       </div>
       <div class="van-header-image"></div>
@@ -9,7 +9,7 @@
   </div>
   <div class="van-bottom-header">
     <div class="van-wrapper">
-      <div class="van-bottom-header-text van-uppercase ml-4">
+      <div class="van-bottom-header-text van-uppercase">
         <span>Вашия дом</span>
 
         <button class="van-contact-button" (click)="scrollToContacts()">
@@ -21,48 +21,58 @@
 </header>
 
 <main>
-  <div class="row no-gutters mt-2">
-    <div class="col-9">
-      <div class="row no-gutters ml-2">
-        <div class="col-8 pr-2">
-          <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-daria-shevtsova-1029803.jpg);"></div>
+  <div class="d-lg-block d-none">
+    <div class="row no-gutters mt-2">
+      <div class="col-9">
+        <div class="row no-gutters ml-2">
+          <div class="col-8 pr-2">
+            <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-daria-shevtsova-1029803.jpg);"></div>
+          </div>
+  
+          <div class="col-4 pr-2">
+            <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-houzlook-com-3356416.jpg);"></div>
+          </div>
         </div>
-
-        <div class="col-4 pr-2">
-          <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-houzlook-com-3356416.jpg);"></div>
+  
+        <div class="row no-gutters ml-2 mt-2">
+          <div class="col-4 pr-2">
+            <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-houzlook-com-3797991.jpg);"></div>
+          </div>
+  
+          <div class="col-4 pr-2">
+            <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-ksenia-chernaya-6021777.jpg);"></div>
+          </div>
+  
+          <div class="col-4 pr-2">
+            <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-saviesa-home-2089696.jpg);"></div>
+          </div>
         </div>
       </div>
-
-      <div class="row no-gutters ml-2 mt-2">
-        <div class="col-4 pr-2">
-          <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-houzlook-com-3797991.jpg);"></div>
-        </div>
-
-        <div class="col-4 pr-2">
-          <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-ksenia-chernaya-6021777.jpg);"></div>
-        </div>
-
-        <div class="col-4 pr-2">
-          <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-saviesa-home-2089696.jpg);"></div>
-        </div>
+  
+      <div class="col-3 pr-2">
+        <div class="van-portfolio-tall-image" style="background-image: url(/assets/images/pexels-vecislavas-popa-1571460.jpg);"></div>
       </div>
-    </div>
-
-    <div class="col-3 pr-2">
-      <div class="van-portfolio-tall-image" style="background-image: url(/assets/images/pexels-vecislavas-popa-1571460.jpg);"></div>
     </div>
   </div>
 
-  <div class="row no-gutters mt-2 mb-2 ml-2">
-    <div class="col-3 pr-2">
-      <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-vecislavas-popa-1643383.jpg);"></div>
+  <div class="d-lg-block d-none">
+    <div class="row no-gutters mt-2 mb-2 ml-2">
+      <div class="col-3 pr-2">
+        <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-vecislavas-popa-1643383.jpg);"></div>
+      </div>
+      <div class="col-6 pr-2">
+        <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-victoria-borodinova-3315291.jpg);"></div>
+      </div>
+      <div class="col-3 pr-2">
+        <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-daria-shevtsova-1029803.jpg);"></div>
+      </div>
     </div>
-    <div class="col-6 pr-2">
-      <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-victoria-borodinova-3315291.jpg);"></div>
-    </div>
-    <div class="col-3 pr-2">
-      <div class="van-portfolio-image" style="background-image: url(/assets/images/pexels-daria-shevtsova-1029803.jpg);"></div>
-    </div>
+  </div>
+
+  <div class="d-lg-none d-block">
+    <div class="van-portfolio-image m-2" style="background-image: url(/assets/images/pexels-daria-shevtsova-1029803.jpg);"></div>
+    <div class="van-portfolio-image m-2" style="background-image: url(/assets/images/pexels-victoria-borodinova-3315291.jpg);"></div>
+    <div class="van-portfolio-image m-2" style="background-image: url(/assets/images/pexels-vecislavas-popa-1643383.jpg);"></div>
   </div>
 
   <div class="van-services-title-top-container">
@@ -73,12 +83,12 @@
   </div>
 
   <div class="row no-gutters justify-content-center">
-    <div class="col-6 px-4">
+    <div class="col-md-auto col-12 px-4">
       <div class="van-service-container" style="background-image: url(/assets/images/IMG-9b4b9c40caa1599a7376631194254fb8-V.jpg);">
       </div>
     </div>
     
-    <div class="col-auto px-4">
+    <div class="col-md-auto col-12 px-4">
       <div class="van-service-data-container">
         <div class="van-service-header py-4">
           Цялостни решения
@@ -97,7 +107,7 @@
   </div>
 
   <div class="row no-gutters justify-content-center van-service-parent-container">
-    <div class="col-auto px-4">
+    <div class="col-md-auto col-12 px-4 order-md-first order-last">
       <div class="van-service-data-container">
         <div class="van-service-header py-4">
           Окачени тавани
@@ -114,19 +124,19 @@
       </div>
     </div>
 
-    <div class="col-6 px-4">
+    <div class="col-md-auto col-12 px-4">
       <div class="van-service-container" style="background-image: url(/assets/images/pexels-felipe-hueb-2747901.jpg);">
       </div>
     </div>
   </div>
 
   <div class="row no-gutters justify-content-center van-service-parent-container">
-    <div class="col-6 px-4">
+    <div class="col-md-auto col-12 px-4">
       <div class="van-service-container" style="background-image: url(/assets/images/pexels-victoria-borodinova-3315291.jpg);">
       </div>
     </div>
 
-    <div class="col-auto px-4">
+    <div class="col-md-auto col-12 px-4">
       <div class="van-service-data-container">
         <div class="van-service-header py-4">
           Облицовки
@@ -145,7 +155,7 @@
   </div>
 
   <div class="row no-gutters">
-    <div class="col-6">
+    <div class="col-md-6 col-12">
       <div class="van-contact-container" #contactsContainer>
         <div class="van-contact-title van-uppercase">
           Контакти
@@ -154,30 +164,42 @@
       
       <div class="van-contact-icons-container">
         <div class="row no-gutters align-items-center justify-content-center">
-          <div class="col-auto px-3">
-            <img width="50px" height="50px" src="/assets/images/facebook.png" alt="Облицовки">
-          </div>
-          <div class="col-auto pl-3 pr-4">
-            Van Systems
-          </div>
-
-          <div class="col-auto pl-4">
-            <img width="50px" height="50px" src="/assets/images/phone-call.png" alt="Облицовки">
-          </div>
-          <div class="col-auto pl-3 pr-4">
-            +359 898380640
+          <div class="col-lg-auto col-12">
+            <div class="row no-gutters align-items-center justify-content-center my-3">
+              <div class="col-auto px-3">
+                <img class="van-contact-icon" width="50px" height="50px" src="/assets/images/facebook.png" alt="Facebook">
+              </div>
+              <div class="col-auto pr-4">
+                Van Systems
+              </div>
+            </div>
           </div>
 
-          <div class="col-auto pl-4 pr-3">
-            <img width="50px" height="50px" src="/assets/images/email.png" alt="Облицовки">
+          <div class="col-lg-auto col-12">
+            <div class="row no-gutters align-items-center justify-content-center my-3">
+              <div class="col-auto pl-4">
+                <img class="van-contact-icon" width="50px" height="50px" src="/assets/images/email.png" alt="E-mail">
+              </div>
+              <div class="col-auto px-3">
+                kostadinov_y@abv.bg
+              </div>
+            </div>
           </div>
-          <div class="col-auto px-3">
-            kostadinov_y@abv.bg
+
+          <div class="col-lg-auto col-12">
+            <div class="row no-gutters align-items-center justify-content-center my-3">
+              <div class="col-auto pl-4">
+                <img class="van-contact-icon" width="50px" height="50px" src="/assets/images/phone-call.png" alt="Phone">
+              </div>
+              <div class="col-auto pl-3 pr-4">
+                +359 898380640
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-md-6 col-12">
       <div class="van-form-top-container">
         <div class="van-form-top-title van-uppercase">
           Изпратете
@@ -191,15 +213,15 @@
         <div class="van-form">
           <form class="text-center" action="https://formspree.io/f/xnqwndyj" method="POST">
             <div class="d-inline-block">
-              <div class="row mt-1">
-                <div class="col-auto">
+              <div class="row no-gutters mt-1 van-form-container">
+                <div class="col-lg-6 col-12 px-3">
                   <div class="form__group">
                     <input type="text" id="first_name" class="form__field" placeholder="Your Name" name="first_name">
                     <label for="first_name" class="form__label">Име</label>
                   </div>
                 </div>
   
-                <div class="col-auto">
+                <div class="col-lg-6 col-12 px-3">
                   <div class="form__group">
                     <input type="text" id="last_name" class="form__field" placeholder="Your Family Name" name="last_name">
                     <label for="last_name" class="form__label">Фамилия</label>
@@ -207,15 +229,15 @@
                 </div>
               </div>
 
-              <div class="row mt-1">
-                <div class="col-auto">
+              <div class="row no-gutters mt-1">
+                <div class="col-lg-6 col-12 px-3">
                   <div class="form__group">
                     <input type="text" id="phone" class="form__field" placeholder="Your Phone" name="phone">
                     <label for="phone" class="form__label">Телефон</label>
                   </div>
                 </div>
   
-                <div class="col-auto">
+                <div class="col-lg-6 col-12 px-3">
                   <div class="form__group">
                     <input type="email" id="_replyto" class="form__field" placeholder="Your Email" name="_replyto">
                     <label for="_replyto" class="form__label">Е-мейл</label>
@@ -223,9 +245,11 @@
                 </div>
               </div>
 
-              <div class="form__group van-text-area mt-3">
-                <textarea id="message" class="form__field" placeholder="Your Message" rows="6" name="message"></textarea>
-                <label for="message" class="form__label">Съобщение</label>
+              <div class="mt-3 mx-3">
+                <div class="form__group van-text-area">
+                  <textarea id="message" class="form__field" placeholder="Your Message" rows="6" name="message"></textarea>
+                  <label for="message" class="form__label">Съобщение</label>
+                </div>
               </div>
 
               <div class="mt-4">

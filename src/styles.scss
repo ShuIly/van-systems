@@ -147,26 +147,20 @@ button, .outline-none {
   position: fixed;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1382px) {
   html {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 13px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 11px;
   }
 }

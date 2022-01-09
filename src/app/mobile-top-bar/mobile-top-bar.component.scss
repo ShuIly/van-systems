@@ -112,3 +112,11 @@
 #lux-menu input:checked~#lux-menu-container {
   transform: none;
 }
+
+#top-bar-container {
+  font-size: 1.5rem;
+
+  li {
+    margin: 1rem;
+  }
+}

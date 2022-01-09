@@ -9,6 +9,7 @@
   color: var(--font-primary);
   font-size: 8.7rem;
   line-height: 5.3rem;
+  margin-left: 2rem;
 }
 
 .van-bottom-header {
@@ -23,6 +24,7 @@
   color: var(--font-light);
   font-size: 9rem;
   line-height: 7rem;
+  margin-left: 2rem;
 }
 
 .van-contact-button {
@@ -45,6 +47,8 @@
 .van-header-image {
   width: 50vw;
   height: 80vh;
+  bottom: -40vh !important;
+
   position: absolute;
   right: 0;
   background-image: url(/assets/images/Website\ design1-09.jpg);
@@ -112,9 +116,10 @@
 }
 
 .van-service-container {
-  width: 100%;
+  width: 600px;
+  max-width: 50vw;
   height: 500px;
-  max-width: 650px;
+  max-height: 100%;
   background-position: 50% 50%;
   background-size: cover;
 
@@ -209,6 +214,11 @@
   line-height: 6.8rem;
 }
 
+.van-form-container {
+  width: 100%;
+  max-width: 500px;
+}
+
 .van-form {
   padding-top: 12rem;
   padding-bottom: 15rem;
@@ -220,7 +230,7 @@
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
-  width: 250px;
+  /* width: 250px; */
 }
 
 .form__group.van-text-area {
@@ -290,14 +300,25 @@ label,
 }
 
 .van-contact-icons-container {
-  margin-top: 5rem;
+  margin: 2rem 0;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1382px) {
+  .van-header-image {
+    width: 50vw;
+    height: 50vh;
+    right: 0;
+    bottom: -25vh !important;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .van-header-image {
-    height: 400px;
-    bottom: -50% !important;
+    width: 50vw;
+    height: 40vh;
+    right: 0;
+    bottom: -20vh !important;
   }
 }
 
@@ -309,10 +330,109 @@ label,
   .van-top-header {
     height: 50vh;
   }
+
+  .van-header-image {
+    width: 45vw;
+    height: 40vh;
+    bottom: -20vh !important;
+  }
+  
+  .van-contact-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .van-form {
+    padding-top: 8rem;
+  }
+
+  .van-portfolio-image {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-  html {
-    height: 300px;
+  .van-header-image {
+    display: none;
+  }
+
+  .van-bottom-header-text,
+  .van-top-header-text {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .van-contact-button {
+    width: 160px;
+  }
+  
+  .van-service-container {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+    margin: 0 auto;
+  }
+
+  .van-form-top-title,
+  .van-contact-title,
+  .van-services-top-title,
+  .van-top-header-text {
+    font-size: 5rem;
+    line-height: 3.4rem;
+  }
+
+  .van-services-bottom-title,
+  .van-bottom-header-text {
+    font-size: 5.2rem;
+    line-height: 4.5rem;
+  }
+
+  .van-form-bottom-title {
+    font-size: 4.8rem;
+    line-height: 3.9rem;
+  }
+
+  .van-service-data-container {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .van-contact-container {
+    margin-top: 20rem;
+    height: 20rem;
+  }
+
+  .van-contact-container {
+    margin-top: 10rem;
+    height: 15rem;
+  }
+
+  .van-form-top-container {
+    height: 15rem;
+  }
+
+  .van-services-title-top-container {
+    height: 15rem;
+  }
+
+  .van-services-title-bottom {
+    height: 10rem;
+  }
+
+  .van-services-title-bottom-container {
+    height: 12rem;
+  }
+
+  .van-bottom-header {
+    height: 50vh;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    top: 2.2rem;
   }
 }
