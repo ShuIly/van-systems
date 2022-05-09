@@ -7,6 +7,7 @@
     "start:fast": "ng serve --sourceMap=false",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy-ghpages": "ng build --output-path docs --base-href /van-systems/",
     "test": "ng test"
   },
   "private": true,
@@ -29,6 +30,7 @@
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
